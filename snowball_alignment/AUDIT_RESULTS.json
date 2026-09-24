@@ -1,0 +1,447 @@
+{
+ "failures": [],
+ "results": {
+  "1_code_facts": {
+   "printed_16_rows_are_the_kernel": {
+    "pass": true,
+    "detail": null
+   },
+   "16_coherent_112_displaced": {
+    "pass": true,
+    "detail": null
+   },
+   "minimum_distance_3": {
+    "pass": true,
+    "detail": null
+   },
+   "perfect_radius_1": {
+    "pass": true,
+    "detail": null
+   },
+   "WHO+WHAT=WHERE": {
+    "pass": true,
+    "detail": null
+   },
+   "WHY+HOW=WHO": {
+    "pass": true,
+    "detail": null
+   },
+   "WHAT+WHEN=HOW": {
+    "pass": true,
+    "detail": null
+   },
+   "WHERE+WHEN=WHY": {
+    "pass": true,
+    "detail": null
+   },
+   "weight_enumerator_1_0_0_7_7_0_0_1": {
+    "pass": true,
+    "detail": [
+     1,
+     0,
+     0,
+     7,
+     7,
+     0,
+     0,
+     1
+    ]
+   },
+   "336_of_336_double_displacements_alias": {
+    "pass": true,
+    "detail": 336
+   },
+   "automorphism_group_order_168": {
+    "pass": true,
+    "detail": 168
+   },
+   "K7_torus_chi_zero": {
+    "pass": true,
+    "detail": null
+   }
+  },
+  "2_rubicon_corrections": {
+   "7_4_3_is_not_self_dual": {
+    "pass": true,
+    "detail": 8
+   },
+   "8_4_4_extension_is_self_dual": {
+    "pass": true,
+    "detail": null
+   },
+   "codeword_1111111_not_in_real_nullspace": {
+    "pass": true,
+    "detail": [
+     4,
+     4,
+     4
+    ]
+   },
+   "192_equals_16_times_12": {
+    "pass": true,
+    "detail": 192
+   },
+   "192_is_not_a_symmetry_charge_any_surjective_H_gives_it": {
+    "pass": true,
+    "detail": 192
+   },
+   "WHEN_column_orbit_is_all_7_positions": {
+    "pass": true,
+    "detail": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ]
+   },
+   "balance_only_at_8_4_4": {
+    "pass": true,
+    "detail": null
+   }
+  },
+  "3_rubicon_statistics": {
+   "WZ_exact_branch_bug_returns_measured_value": {
+    "pass": true,
+    "detail": "compute_prediction tests 'W/Z' in reason; reason lacks it -> fallback returns measured -> 0.00% instead of 0.73%"
+   },
+   "all_17_deduced_assignments_equal_global_argmin_fit": {
+    "pass": true,
+    "detail": [
+     [
+      "Mass step Gamma",
+      true,
+      0.046
+     ],
+     [
+      "H0 tension fractional",
+      true,
+      0.649
+     ],
+     [
+      "H0 Planck uncertainty",
+      true,
+      1.06
+     ],
+     [
+      "H0 SH0ES uncertainty",
+      true,
+      1.819
+     ],
+     [
+      "Strong coupling uncertainty",
+      true,
+      1.6
+     ],
+     [
+      "CMB temperature uncertainty",
+      true,
+      0.02
+     ],
+     [
+      "Earth g surface variation",
+      true,
+      0.063
+     ],
+     [
+      "Fine structure 1/alpha",
+      true,
+      2.421
+     ],
+     [
+      "Strong coupling alpha_s",
+      true,
+      3.262
+     ],
+     [
+      "Omega_matter",
+      true,
+      3.661
+     ],
+     [
+      "Baryon/matter ratio",
+      true,
+      0.938
+     ],
+     [
+      "Tau/muon mass ratio",
+      true,
+      0.853
+     ],
+     [
+      "Weinberg sin2_theta_W",
+      true,
+      5.916
+     ],
+     [
+      "G Birge ratio",
+      true,
+      2.273
+     ],
+     [
+      "Top/Higgs mass ratio",
+      true,
+      1.114
+     ],
+     [
+      "Muon g-2 uncertainty",
+      true,
+      1.817
+     ],
+     [
+      "Alpha uncertainty",
+      true,
+      2.071
+     ]
+    ]
+   },
+   "honest_average_offset": {
+    "pass": true,
+    "detail": 1.595
+   },
+   "permutation_test_is_order_of_magnitude_test": {
+    "pass": true,
+    "detail": "shuffling base^n values across targets from 1.5e-10 to 137 cannot match; p=0 says nothing about depth assignment"
+   },
+   "free_fit_null_p_value_prespecified_targets": {
+    "pass": true,
+    "detail": {
+     "observed_mean_best_offset_pct": 1.74,
+     "p_value_if_17_targets_were_fixed_in_advance": 5e-05
+    }
+   },
+   "significance_depends_on_unrecorded_screening_count": {
+    "pass": true,
+    "detail": {
+     "P(mean<=observed) when N screened, best 17 kept": {
+      "17": 0.0,
+      "25": 0.061,
+      "30": 0.25633333333333336,
+      "40": 0.7513333333333333,
+      "60": 0.9963333333333333
+     },
+     "reading": "the p-value is undefined until the candidate list examined is recorded (pre-registration)"
+    }
+   }
+  },
+  "4_irrational_base": {
+   "roots_reproduce": {
+    "pass": true,
+    "detail": [
+     0.7333637668865886,
+     0.7333623795430589
+    ]
+   },
+   "base_uncertainty_from_Gamma_is_percent_not_ppm": {
+    "pass": true,
+    "detail": {
+     "range": [
+      0.70969,
+      0.75122
+     ],
+     "half_width_ppm": 28321
+    }
+   },
+   "two_sig_fig_rounding_exceeds_30ppm": {
+    "pass": true,
+    "detail": 2755
+   }
+  },
+  "5_isw": {
+   "all_bins_consistent_with_zero": {
+    "pass": true,
+    "detail": {
+     "bin1": 0.207,
+     "bin2": -0.04,
+     "bin3": -0.121,
+     "bin4": -0.046,
+     "bin5": -0.025
+    }
+   },
+   "null_model_chi2_over_5_bins": {
+    "pass": true,
+    "detail": 0.062
+   },
+   "v10_script_does_not_parse": {
+    "pass": true,
+    "detail": "run_isw_test_v10_signed.py: 'else:' followed only by a comment -> IndentationError"
+   },
+   "preregistered_march18_prediction_was_all_positive": {
+    "pass": true,
+    "detail": "isw_prediction.py predicts +2.37,+1.77,+1.27,+0.82,+0.38 %; the v10 sign-flip model was written after the bin signs were seen"
+   }
+  },
+  "6_cosmic_pattern": {
+   "L_value": {
+    "pass": true,
+    "detail": 0.9729366416425337
+   },
+   "weights_are_solved_from_the_data": {
+    "pass": true,
+    "detail": {
+     "sin2thetaW": {
+      "printed_w": "-4/59",
+      "w_needed_exactly": -0.06955
+     },
+     "alpha_s": {
+      "printed_w": "39/196",
+      "w_needed_exactly": 0.1984
+     },
+     "sin theta_C": {
+      "printed_w": "-39/137",
+      "w_needed_exactly": -0.22639
+     },
+     "|V_ud|": {
+      "printed_w": "2/59",
+      "w_needed_exactly": 0.03552
+     },
+     "m_H": {
+      "printed_w": "-3/31",
+      "w_needed_exactly": -0.10199
+     },
+     "alpha2^-1": {
+      "printed_w": "-4/39",
+      "w_needed_exactly": -0.10733
+     }
+    }
+   },
+   "recipe_hits_random_targets_to_1e-4": {
+    "pass": true,
+    "detail": "187/300 random targets in [0.1,1] matched"
+   },
+   "K_definition_inconsistent": {
+    "pass": true,
+    "detail": "D=2: D^3+D+1=11 (p.11 rule) but paper uses 18 (2R+r+2)"
+   },
+   "R_definition_inconsistent_D4": {
+    "pass": true,
+    "detail": "p.24 uses Phi_3(4)=21, p.31 uses Phi_4(4)=17"
+   },
+   "13_is_not_smallest_prime_with_3_divides_p_minus_1": {
+    "pass": true,
+    "detail": null
+   },
+   "cosh_sinh_identity_is_tautological": {
+    "pass": true,
+    "detail": "R^2/(R^2-r^2) - r^2/(R^2-r^2) = 1 for every R != r"
+   },
+   "D_is_field_order_not_dimension": {
+    "pass": true,
+    "detail": "R=13 is |PG(2,3)|; the Rubicon's 7 is |PG(2,2)|: consecutive values of q^2+q+1 (A002061)"
+   }
+  },
+  "7_bridges": {
+   "142857_phase_is_affine_on_F2^3": {
+    "pass": true,
+    "detail": {
+     "translation": 1,
+     "linear_part": [
+      0,
+      1,
+      5,
+      4,
+      7,
+      6,
+      2,
+      3
+     ]
+    }
+   },
+   "phase_order_6_linear_part_order_3": {
+    "pass": true,
+    "detail": [
+     6,
+     3
+    ]
+   },
+   "ATLAS_code_is_8_4_4_with_1_14_1": {
+    "pass": true,
+    "detail": null
+   },
+   "phase_preserves_the_8_4_4_code": {
+    "pass": true,
+    "detail": null
+   },
+   "rubicon_code_is_a_puncture_of_LM_ATLAS": {
+    "pass": true,
+    "detail": null
+   },
+   "AGL32_order": {
+    "pass": true,
+    "detail": null
+   },
+   "info_bases_are_A000295_over_A000225": {
+    "pass": true,
+    "detail": [
+     "0/1",
+     "1/3",
+     "4/7",
+     "11/15",
+     "26/31",
+     "57/63"
+    ]
+   },
+   "codeword_count_equals_A016031": {
+    "pass": true,
+    "detail": "numerical evaluation fiber (RR-ROLE-EVALUATION), not a structural identity"
+   },
+   "syndrome_total_sequence": {
+    "pass": true,
+    "detail": null
+   }
+  },
+  "8_oeis_live": {
+   "A000295": {
+    "pass": true,
+    "detail": {
+     "name": "Eulerian numbers (Euler's triangle: column k=2 of A008292, column k=1 of A173018",
+     "offset_of_prefix": 1
+    }
+   },
+   "A000225": {
+    "pass": true,
+    "detail": {
+     "name": "a(n) = 2^n - 1. (Sometimes called Mersenne numbers, although that name is usuall",
+     "offset_of_prefix": 0
+    }
+   },
+   "A002884": {
+    "pass": true,
+    "detail": {
+     "name": "Number of nonsingular n X n matrices over GF(2) (order of the group GL(n,2)); or",
+     "offset_of_prefix": 0
+    }
+   },
+   "A002061": {
+    "pass": true,
+    "detail": {
+     "name": "Central polygonal numbers: a(n) = n^2 - n + 1.",
+     "offset_of_prefix": 0
+    }
+   },
+   "A000934": {
+    "pass": true,
+    "detail": {
+     "name": "Chromatic number (or Heawood number) Chi(n) of surface of genus n.",
+     "offset_of_prefix": 0
+    }
+   },
+   "A016031": {
+    "pass": true,
+    "detail": {
+     "name": "De Bruijn's sequence: 2^(2^(n-1) - n): number of ways of arranging 2^n bits in c",
+     "offset_of_prefix": 0
+    }
+   },
+   "A020806": {
+    "pass": true,
+    "detail": {
+     "name": "Decimal expansion of 1/7.",
+     "offset_of_prefix": 0
+    }
+   }
+  }
+ }
+}

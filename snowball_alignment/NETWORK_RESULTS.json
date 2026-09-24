@@ -1,0 +1,817 @@
+{
+ "kernel_members_dimensionless": {
+  "alpha": true,
+  "mu": true,
+  "G_CEM": true,
+  "H0_CEM": true
+ },
+ "kernel_lattice_index": {
+  "gcd_4x4_minors_basis": 1,
+  "gcd_4x4_minors_dimension_matrix": 1,
+  "reading": "basis generates the full integer kernel iff these agree up to sign"
+ },
+ "kernel_values": {
+  "alpha": 0.007297352569277959,
+  "mu": 1836.1526734400002,
+  "G_CEM": 2.4006095051467e-43,
+  "H0_CEM": 2.0531488703392002e-41
+ },
+ "sections": {
+  "SI": {
+   "constants": {
+    "c": 299792457.9999996,
+    "h": 6.626070150000007e-34,
+    "e": 1.6021766339999946e-19,
+    "eps0": 8.854187812800002e-12,
+    "m_e": 9.10938370149999e-31,
+    "m_p": 1.672621923689997e-27,
+    "G": 6.6743e-11,
+    "H0": 2.1842852410855084e-18
+   },
+   "kernel_coordinates": {
+    "alpha": 0.007297352569277959,
+    "mu": 1836.1526734400002,
+    "G_CEM": 2.4006095051467e-43,
+    "H0_CEM": 2.0531488703392002e-41
+   }
+  },
+  "CEM": {
+   "constants": {
+    "c": 1.0,
+    "h": 861.0225759999205,
+    "e": 1.0,
+    "eps0": 0.0795774715459493,
+    "m_e": 1.0,
+    "m_p": 1836.1526734400002,
+    "G": 2.4006095051466086e-43,
+    "H0": 2.0531488703392203e-41
+   },
+   "kernel_coordinates": {
+    "alpha": 0.007297352569278088,
+    "mu": 1836.1526734400002,
+    "G_CEM": 2.400609505146666e-43,
+    "H0_CEM": 2.053148870339171e-41
+   }
+  },
+  "Planck": {
+   "constants": {
+    "c": 0.9999999999999858,
+    "h": 6.283185307179424,
+    "e": 0.08542454313180756,
+    "eps0": 0.07957747154595043,
+    "m_e": 4.185462213449628e-23,
+    "m_p": 7.685147632807635e-20,
+    "G": 1.0000000000000213,
+    "H0": 1.1776020048105894e-61
+   },
+   "kernel_coordinates": {
+    "alpha": 0.007297352569278088,
+    "mu": 1836.1526734400002,
+    "G_CEM": 2.4006095051467e-43,
+    "H0_CEM": 2.0531488703392293e-41
+   }
+  },
+  "atomic": {
+   "constants": {
+    "c": 137.03599908410754,
+    "h": 6.283185307179602,
+    "e": 1.0,
+    "eps0": 0.0795774715459493,
+    "m_e": 1.0,
+    "m_p": 1836.1526734400002,
+    "G": 2.4006095051466767e-43,
+    "H0": 5.283533334496205e-35
+   },
+   "kernel_coordinates": {
+    "alpha": 0.007297352569277907,
+    "mu": 1836.1526734400002,
+    "G_CEM": 2.4006095051467344e-43,
+    "H0_CEM": 2.053148870339171e-41
+   }
+  }
+ },
+ "kernel_coordinates_section_invariant": true,
+ "CEM_reading": {
+  "hbar_in_CEM": 137.03599908410447,
+  "1/alpha": 137.0359990841097,
+  "statement": "with c = e = m_e = k_e = 1 the action quantum hbar equals 1/alpha: the one measured electromagnetic stone surfaces as the size of the quantum",
+  "G_in_CEM": 2.4006095051466086e-43,
+  "G_meaning": "ratio of gravitational to electrostatic force between two electrons",
+  "H0_in_CEM": 2.0531488703392203e-41,
+  "H0_meaning": "H0 * r_e / c (classical electron radius over Hubble length)",
+  "large_number_fiber": {
+   "1/G_CEM": 4.165608766674148e+42,
+   "1/H0_CEM": 4.870567421809898e+40,
+   "status": "numeral coincidence class (Dirac); retained as evaluation fiber, no map declared"
+  }
+ },
+ "riverbed_CeM": {
+  "alpha_step_efolds": 4.920243658348211,
+  "stones": [
+   {
+    "stone": "Hubble rate  hbar*H0",
+    "energy_eV": 1.4377226630738715e-33,
+    "efolds_from_electron": -88.76637050543961,
+    "is": "one e-fold of cosmic expansion per Hubble time, as an energy",
+    "reached_by": "CMB via LambdaCDM / distance ladder"
+   },
+   {
+    "stone": "Cs hyperfine h*nu_Cs",
+    "energy_eV": 3.8017670260905e-05,
+    "efolds_from_electron": -23.321582313835858,
+    "is": "the SI second: one Cs-133 ground-state flip",
+    "reached_by": "[exact] SI definition",
+    "gap_efolds_from_previous": 65.44478819160375
+   },
+   {
+    "stone": "CMB photon k*T_CMB",
+    "energy_eV": 0.00023486369459311442,
+    "efolds_from_electron": -21.50062804948826,
+    "is": "thermal energy of the relic radiation today",
+    "reached_by": "FIRAS blackbody spectrum",
+    "gap_efolds_from_previous": 1.8209542643475984
+   },
+   {
+    "stone": "dark-energy scale rho_L^(1/4)",
+    "energy_eV": 0.0022401199881947925,
+    "efolds_from_electron": -19.245348662773118,
+    "is": "fourth root of the vacuum energy density",
+    "reached_by": "H0, Omega_L, G combined",
+    "gap_efolds_from_previous": 2.2552793867151415
+   },
+   {
+    "stone": "Rydberg  R_inf*h*c",
+    "energy_eV": 13.605693122885565,
+    "efolds_from_electron": -10.533634497256367,
+    "is": "binding energy of hydrogen (infinite nuclear mass)",
+    "reached_by": "1S-2S two-photon, counter-propagating",
+    "gap_efolds_from_previous": 8.711714165516751
+   },
+   {
+    "stone": "Hartree  alpha^2 m_e c^2",
+    "energy_eV": 27.21138624577113,
+    "efolds_from_electron": -9.840487316696422,
+    "is": "atomic unit of energy",
+    "reached_by": "= 2 Rydberg exactly",
+    "gap_efolds_from_previous": 0.6931471805599454
+   },
+   {
+    "stone": "alpha * m_e c^2",
+    "energy_eV": 3728.939500652848,
+    "efolds_from_electron": -4.920243658348211,
+    "is": "Coulomb energy at the reduced Compton wavelength",
+    "reached_by": "one alpha-step below m_e c^2",
+    "gap_efolds_from_previous": 4.920243658348211
+   },
+   {
+    "stone": "electron  m_e c^2",
+    "energy_eV": 510998.9499961642,
+    "efolds_from_electron": 0.0,
+    "is": "rest energy of the electron (ORIGIN of this chart)",
+    "reached_by": "Penning trap / bound-electron g",
+    "gap_efolds_from_previous": 4.920243658348211
+   },
+   {
+    "stone": "m_e c^2 / alpha",
+    "energy_eV": 70025251.64365537,
+    "efolds_from_electron": 4.920243658348211,
+    "is": "electron rest energy one alpha-step up",
+    "reached_by": "one alpha-step above m_e c^2",
+    "gap_efolds_from_previous": 4.920243658348211
+   },
+   {
+    "stone": "muon  m_mu c^2",
+    "energy_eV": 105658375.49999999,
+    "efolds_from_electron": 5.3315987604134945,
+    "is": "muon rest energy",
+    "reached_by": "[recall] PDG",
+    "gap_efolds_from_previous": 0.4113551020652837
+   },
+   {
+    "stone": "proton  m_p c^2",
+    "energy_eV": 938272088.1604904,
+    "efolds_from_electron": 7.515427723191622,
+    "is": "proton rest energy",
+    "reached_by": "Penning trap mass ratios; HD+ spectroscopy",
+    "gap_efolds_from_previous": 2.1838289627781275
+   },
+   {
+    "stone": "tau  m_tau c^2",
+    "energy_eV": 1776860000.0,
+    "efolds_from_electron": 8.153990784165359,
+    "is": "tau rest energy",
+    "reached_by": "[recall] PDG",
+    "gap_efolds_from_previous": 0.6385630609737367
+   },
+   {
+    "stone": "W  m_W c^2",
+    "energy_eV": 80376999999.99998,
+    "efolds_from_electron": 11.96587108817216,
+    "is": "W boson rest energy",
+    "reached_by": "[recall] PDG 2022",
+    "gap_efolds_from_previous": 3.8118803040068006
+   },
+   {
+    "stone": "Z  m_Z c^2",
+    "energy_eV": 91187600000.0,
+    "efolds_from_electron": 12.092061945488647,
+    "is": "Z boson rest energy",
+    "reached_by": "[recall] PDG 2022",
+    "gap_efolds_from_previous": 0.12619085731648738
+   },
+   {
+    "stone": "Higgs  m_H c^2",
+    "energy_eV": 125249999999.99998,
+    "efolds_from_electron": 12.409454762529682,
+    "is": "Higgs boson rest energy",
+    "reached_by": "[recall] PDG 2022",
+    "gap_efolds_from_previous": 0.3173928170410356
+   },
+   {
+    "stone": "electroweak v",
+    "energy_eV": 246220000000.0,
+    "efolds_from_electron": 13.085368467784177,
+    "is": "Higgs vacuum expectation value (from G_F)",
+    "reached_by": "[recall] muon lifetime",
+    "gap_efolds_from_previous": 0.6759137052544943
+   },
+   {
+    "stone": "Planck  sqrt(hbar c^5/G)",
+    "energy_eV": 1.2208901285838957e+28,
+    "efolds_from_electron": 51.5278399957515,
+    "is": "energy at which gravity of a quantum equals its own scale",
+    "reached_by": "torsion balances etc. (G)",
+    "gap_efolds_from_previous": 38.44247152796732
+   }
+  ],
+  "gap_identities": {
+   "Rydberg = 2 ln(alpha) - ln 2": true,
+   "alpha-steps equally spaced": true,
+   "Planck = -(1/2) ln(alpha * G_CEM)": true,
+   "Hubble = ln(H0_CEM) - ln(alpha)": true,
+   "proton = ln(mu)": true
+  },
+  "span_efolds_hubble_to_planck": 140.29421050119112
+ },
+ "network": {
+  "alpha_inv": {
+   "routes": [
+    {
+     "route": "a_e (Fan 2023)",
+     "value": 137.035999166,
+     "sigma": 1.5e-08,
+     "compares": "spin-flip (anomaly) frequency vs cyclotron frequency of ONE electron in a Penning trap",
+     "direction": "direct frequency ratio of one system",
+     "transports": [
+      "QED series for a_e",
+      "hadronic+weak a_e terms"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "Rb recoil (Morel 2020)",
+     "value": 137.035999206,
+     "sigma": 1.1e-08,
+     "compares": "photon momentum hbar*k vs Rb atom velocity, Bloch/Raman kicks up and down",
+     "direction": "dual-direction (+k/-k)",
+     "transports": [
+      "R_inf (H spectroscopy + QED)",
+      "Rb h/m apparatus",
+      "m_Rb/m_e (Penning)",
+      "m_e (bound-e g, QED)"
+     ],
+     "provenance": "[OEIS]"
+    },
+    {
+     "route": "Cs recoil (Parker 2018)",
+     "value": 137.035999046,
+     "sigma": 2.7e-08,
+     "compares": "photon momentum hbar*k vs Cs atom velocity, symmetric atom interferometer",
+     "direction": "dual-direction (+k/-k)",
+     "transports": [
+      "Cs h/m apparatus",
+      "R_inf (H spectroscopy + QED)",
+      "m_Cs/m_e (Penning)",
+      "m_e (bound-e g, QED)"
+     ],
+     "provenance": "[recall]"
+    }
+   ],
+   "independent_loops": 2,
+   "weighted_mean": 137.03599917778715,
+   "birge_ratio": 3.938268682386333,
+   "loops_by_tension": [
+    {
+     "loop": "Rb recoil (Morel 2020) -> stone -> Cs recoil (Parker 2018)",
+     "holonomy_ln": 1.1675764792618598e-09,
+     "z": 5.48795504440012,
+     "exposed_transports": [
+      "Cs h/m apparatus",
+      "Rb h/m apparatus",
+      "m_Cs/m_e (Penning)",
+      "m_Rb/m_e (Penning)"
+     ],
+     "cancelled_shared": [
+      "R_inf (H spectroscopy + QED)",
+      "m_e (bound-e g, QED)"
+     ]
+    },
+    {
+     "loop": "a_e (Fan 2023) -> stone -> Cs recoil (Parker 2018)",
+     "holonomy_ln": 8.756824150853493e-10,
+     "z": 3.885143922866757,
+     "exposed_transports": [
+      "Cs h/m apparatus",
+      "QED series for a_e",
+      "R_inf (H spectroscopy + QED)",
+      "hadronic+weak a_e terms",
+      "m_Cs/m_e (Penning)",
+      "m_e (bound-e g, QED)"
+     ],
+     "cancelled_shared": []
+    },
+    {
+     "loop": "a_e (Fan 2023) -> stone -> Rb recoil (Morel 2020)",
+     "holonomy_ln": -2.9189417553962166e-10,
+     "z": -2.150413859879352,
+     "exposed_transports": [
+      "QED series for a_e",
+      "R_inf (H spectroscopy + QED)",
+      "Rb h/m apparatus",
+      "hadronic+weak a_e terms",
+      "m_Rb/m_e (Penning)",
+      "m_e (bound-e g, QED)"
+     ],
+     "cancelled_shared": []
+    }
+   ]
+  },
+  "H0_kms_Mpc": {
+   "routes": [
+    {
+     "route": "CMB (Planck 2018)",
+     "value": 67.4,
+     "sigma": 0.5,
+     "compares": "angular size of the acoustic scale on the sky (sound horizon / angular distance)",
+     "direction": "theory transport",
+     "transports": [
+      "LambdaCDM expansion history",
+      "sound-horizon physics"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "Cepheid ladder (SH0ES 2022)",
+     "value": 73.04,
+     "sigma": 1.04,
+     "compares": "flux vs distance: parallax -> Cepheid period-luminosity -> SN Ia, rung by rung",
+     "direction": "calibration chain (placed lenses)",
+     "transports": [
+      "Cepheid P-L",
+      "SN Ia standardization",
+      "local flow",
+      "parallax zero point"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "TRGB ladder (Freedman 2021)",
+     "value": 69.8,
+     "sigma": 1.7,
+     "compares": "flux vs distance: red-giant-branch tip -> SN Ia",
+     "direction": "calibration chain (placed lenses)",
+     "transports": [
+      "SN Ia standardization",
+      "TRGB zero point",
+      "local flow"
+     ],
+     "provenance": "[recall]"
+    }
+   ],
+   "independent_loops": 2,
+   "weighted_mean": 68.64953244816769,
+   "birge_ratio": 3.5744082940976516,
+   "loops_by_tension": [
+    {
+     "loop": "CMB (Planck 2018) -> stone -> Cepheid ladder (SH0ES 2022)",
+     "holonomy_ln": -0.08036221836845174,
+     "z": -5.005313414939812,
+     "exposed_transports": [
+      "Cepheid P-L",
+      "LambdaCDM expansion history",
+      "SN Ia standardization",
+      "local flow",
+      "parallax zero point",
+      "sound-horizon physics"
+     ],
+     "cancelled_shared": []
+    },
+    {
+     "loop": "Cepheid ladder (SH0ES 2022) -> stone -> TRGB ladder (Freedman 2021)",
+     "holonomy_ln": 0.04537322651838645,
+     "z": 1.60828881631723,
+     "exposed_transports": [
+      "Cepheid P-L",
+      "TRGB zero point",
+      "parallax zero point"
+     ],
+     "cancelled_shared": [
+      "SN Ia standardization",
+      "local flow"
+     ]
+    },
+    {
+     "loop": "CMB (Planck 2018) -> stone -> TRGB ladder (Freedman 2021)",
+     "holonomy_ln": -0.03498899185006537,
+     "z": -1.3742712443048726,
+     "exposed_transports": [
+      "LambdaCDM expansion history",
+      "SN Ia standardization",
+      "TRGB zero point",
+      "local flow",
+      "sound-horizon physics"
+     ],
+     "cancelled_shared": []
+    }
+   ]
+  },
+  "G_1e-11": {
+   "routes": [
+    {
+     "route": "HUST-18 time-of-swing",
+     "value": 6.674184,
+     "sigma": 7.8e-05,
+     "compares": "torsion period with source masses near vs far",
+     "direction": "dual-configuration (near/far)",
+     "transports": [
+      "HUST TOS apparatus",
+      "SI mass/length"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "HUST-18 angular-accel. feedback",
+     "value": 6.674484,
+     "sigma": 7.8e-05,
+     "compares": "turntable angular acceleration needed to cancel gravitational torque",
+     "direction": "direct balance",
+     "transports": [
+      "HUST AAF apparatus",
+      "SI mass/length"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "UWash-00 AAF",
+     "value": 6.674255,
+     "sigma": 9.2e-05,
+     "compares": "angular acceleration feedback torsion balance",
+     "direction": "direct balance",
+     "transports": [
+      "SI mass/length",
+      "UWash apparatus"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "BIPM-14 servo/Cavendish",
+     "value": 6.67554,
+     "sigma": 0.00016,
+     "compares": "electrostatic servo torque vs gravitational torque",
+     "direction": "direct balance",
+     "transports": [
+      "BIPM apparatus",
+      "SI mass/length"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "UCI-14 time-of-swing",
+     "value": 6.67435,
+     "sigma": 0.00013,
+     "compares": "cryogenic torsion period near vs far",
+     "direction": "dual-configuration (near/far)",
+     "transports": [
+      "SI mass/length",
+      "UCI apparatus"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "JILA-18 pendulum",
+     "value": 6.6726,
+     "sigma": 0.00025,
+     "compares": "pendulum-cavity spacing with source masses moved",
+     "direction": "dual-configuration",
+     "transports": [
+      "JILA apparatus",
+      "SI mass/length"
+     ],
+     "provenance": "[recall]"
+    },
+    {
+     "route": "LENS-14 atom interferometry",
+     "value": 6.67191,
+     "sigma": 0.00099,
+     "compares": "gravity-gradient phase on Rb matter waves, source masses moved",
+     "direction": "dual-direction (+k/-k)",
+     "transports": [
+      "LENS apparatus",
+      "Rb h/m",
+      "SI mass/length"
+     ],
+     "provenance": "[recall]"
+    }
+   ],
+   "independent_loops": 6,
+   "weighted_mean": 6.674349177877449,
+   "birge_ratio": 4.452192704017238,
+   "loops_by_tension": [
+    {
+     "loop": "BIPM-14 servo/Cavendish -> stone -> JILA-18 pendulum",
+     "holonomy_ln": 0.00044051081986573197,
+     "z": 9.904197468709734,
+     "exposed_transports": [
+      "BIPM apparatus",
+      "JILA apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 time-of-swing -> stone -> BIPM-14 servo/Cavendish",
+     "holonomy_ln": -0.0002031502680749,
+     "z": -7.618454107294649,
+     "exposed_transports": [
+      "BIPM apparatus",
+      "HUST TOS apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 angular-accel. feedback -> stone -> JILA-18 pendulum",
+     "holonomy_ln": 0.000282308856752896,
+     "z": 7.193149099076634,
+     "exposed_transports": [
+      "HUST AAF apparatus",
+      "JILA apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "UWash-00 AAF -> stone -> BIPM-14 servo/Cavendish",
+     "holonomy_ln": -0.0001925123200721004,
+     "z": -6.962678325843352,
+     "exposed_transports": [
+      "BIPM apparatus",
+      "UWash apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "UWash-00 AAF -> stone -> JILA-18 pendulum",
+     "holonomy_ln": 0.00024799849979371713,
+     "z": 6.212092937653106,
+     "exposed_transports": [
+      "JILA apparatus",
+      "UWash apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "UCI-14 time-of-swing -> stone -> JILA-18 pendulum",
+     "holonomy_ln": 0.00026223219687303295,
+     "z": 6.210049879141123,
+     "exposed_transports": [
+      "JILA apparatus",
+      "UCI apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 time-of-swing -> stone -> JILA-18 pendulum",
+     "holonomy_ln": 0.00023736055179094745,
+     "z": 6.047855013611451,
+     "exposed_transports": [
+      "HUST TOS apparatus",
+      "JILA apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 angular-accel. feedback -> stone -> BIPM-14 servo/Cavendish",
+     "holonomy_ln": -0.00015820196311293284,
+     "z": -5.932873299887396,
+     "exposed_transports": [
+      "BIPM apparatus",
+      "HUST AAF apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "BIPM-14 servo/Cavendish -> stone -> UCI-14 time-of-swing",
+     "holonomy_ln": 0.00017827862299270184,
+     "z": 5.772453155238665,
+     "exposed_transports": [
+      "BIPM apparatus",
+      "UCI apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "BIPM-14 servo/Cavendish -> stone -> LENS-14 atom interferometry",
+     "holonomy_ln": 0.0005439241337477472,
+     "z": 3.6187642633706854,
+     "exposed_transports": [
+      "BIPM apparatus",
+      "LENS apparatus",
+      "Rb h/m"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 time-of-swing -> stone -> HUST-18 angular-accel. feedback",
+     "holonomy_ln": -4.4948304961902435e-05,
+     "z": -2.7196414644912146,
+     "exposed_transports": [
+      "HUST AAF apparatus",
+      "HUST TOS apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 angular-accel. feedback -> stone -> LENS-14 atom interferometry",
+     "holonomy_ln": 0.0003857221706349127,
+     "z": 2.591473894778434,
+     "exposed_transports": [
+      "HUST AAF apparatus",
+      "LENS apparatus",
+      "Rb h/m"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "UCI-14 time-of-swing -> stone -> LENS-14 atom interferometry",
+     "holonomy_ln": 0.0003656455107550503,
+     "z": 2.443236662403395,
+     "exposed_transports": [
+      "LENS apparatus",
+      "Rb h/m",
+      "UCI apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "UWash-00 AAF -> stone -> LENS-14 atom interferometry",
+     "holonomy_ln": 0.0003514118136756852,
+     "z": 2.3581175336500917,
+     "exposed_transports": [
+      "LENS apparatus",
+      "Rb h/m",
+      "UWash apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 time-of-swing -> stone -> LENS-14 atom interferometry",
+     "holonomy_ln": 0.00034077386567297216,
+     "z": 2.289488132753498,
+     "exposed_transports": [
+      "HUST TOS apparatus",
+      "LENS apparatus",
+      "Rb h/m"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 angular-accel. feedback -> stone -> UWash-00 AAF",
+     "holonomy_ln": 3.4310356959244696e-05,
+     "z": 1.8985962430098184,
+     "exposed_transports": [
+      "HUST AAF apparatus",
+      "UWash apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 time-of-swing -> stone -> UCI-14 time-of-swing",
+     "holonomy_ln": -2.487164508223718e-05,
+     "z": -1.0949589128244848,
+     "exposed_transports": [
+      "HUST TOS apparatus",
+      "UCI apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 angular-accel. feedback -> stone -> UCI-14 time-of-swing",
+     "holonomy_ln": 2.0076659879655132e-05,
+     "z": 0.8838731479833292,
+     "exposed_transports": [
+      "HUST AAF apparatus",
+      "UCI apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "JILA-18 pendulum -> stone -> LENS-14 atom interferometry",
+     "holonomy_ln": 0.00010341331388191585,
+     "z": 0.6757257459421313,
+     "exposed_transports": [
+      "JILA apparatus",
+      "LENS apparatus",
+      "Rb h/m"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "UWash-00 AAF -> stone -> UCI-14 time-of-swing",
+     "holonomy_ln": -1.423369707948488e-05,
+     "z": -0.5965072974043513,
+     "exposed_transports": [
+      "UCI apparatus",
+      "UWash apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    },
+    {
+     "loop": "HUST-18 time-of-swing -> stone -> UWash-00 AAF",
+     "holonomy_ln": -1.0637948002741613e-05,
+     "z": -0.58864990791592,
+     "exposed_transports": [
+      "HUST TOS apparatus",
+      "UWash apparatus"
+     ],
+     "cancelled_shared": [
+      "SI mass/length"
+     ]
+    }
+   ]
+  }
+ },
+ "section_invariance_of_loops": {
+  "SI": {
+   "H0_loop_holonomy": 0.08036221836844959,
+   "G_loop_HUST_AAF_vs_JILA": 0.00028230885675384343,
+   "H0_value_in_section": 2.1842852410855084e-18,
+   "G_value_in_section": 6.6743e-11
+  },
+  "CEM": {
+   "H0_loop_holonomy": 0.08036221836844959,
+   "G_loop_HUST_AAF_vs_JILA": 0.00028230885675384343,
+   "H0_value_in_section": 2.0531488703392203e-41,
+   "G_value_in_section": 2.4006095051466086e-43
+  },
+  "Planck": {
+   "H0_loop_holonomy": 0.08036221836843538,
+   "G_loop_HUST_AAF_vs_JILA": 0.00028230885675384343,
+   "H0_value_in_section": 1.1776020048105894e-61,
+   "G_value_in_section": 1.0000000000000213
+  },
+  "atomic": {
+   "H0_loop_holonomy": 0.08036221836844959,
+   "G_loop_HUST_AAF_vs_JILA": 0.00028230885675384343,
+   "H0_value_in_section": 5.283533334496205e-35,
+   "G_value_in_section": 2.4006095051466767e-43
+  }
+ }
+}
