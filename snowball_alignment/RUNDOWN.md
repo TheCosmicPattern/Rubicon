@@ -69,6 +69,8 @@ All of the following are machine-checked in `checks/transition_inversion.py`, fo
 - At even r (hex, byte) the fixed points are 0101…, 1010…: the base-2^r digits of 1/3 and 2/3 (0x5, 0xA; 0x55, 0xAA). These are the analogues of decimal's wall digits 3, 6, 9.
 - NR4's reflection J is a linear transvection.
 
+**Independent routes to r = 3** (✔ TI10). Three of the readings are one equation, 2^r = 2(r+1): the difference image equals the dual, z²+1 is a single cycle, and 2(r+1) = 2^r itself. The divisor condition τ(2^r−2) = 2^r−1−r is a genuinely independent route. **TI9:** GL(3,2) has no element of order 6, so the decimal phase needs the eighth (affine) coordinate. **TI11:** the Cosmic Pattern's radii (13, 3) are one disk parameter, tanh s = 3/13.
+
 **Cycle-count sequence (new to OEIS).** The number of cycles of this phase on r-bit words is 1, 3, 2, 6, 4, 14, 10, 36, … It equals A000013(r) for odd r and A000031(r) for even r (Burnside; checked to r = 200).
 
 **Radius-free surface.** The complete graph K₇ triangulates the torus with 7 vertices, 21 edges and 14 faces, so χ = 0. The 14 faces split into two Fano planes. The torus the drafts reach for is incidence-derived (IT2) and needs no radii.
@@ -155,5 +157,5 @@ Computed exactly in `checks/constants_as_bounds.py`. Values tagged [recall] must
 2. Freeze the Rubicon mapping function and publish the full screening list. Then recompute §4's statistics.
 3. G: obtain CODATA's individual input values and run the joint-calibration projection in place of the expansion factor.
 4. ISW: run the pre-registered Mar-18 prediction on the full data with a covariance model. Repair the v10 script's syntax, while keeping it labelled post hoc.
-5. Reader extracts of the snowball source store: integrated as they complete (see the PR log).
+5. Source store: fully read and synthesized in [`SOURCE_CORROBORATION.md`](SOURCE_CORROBORATION.md). The verbatim extracts are in `source_extracts/`.
 6. OEIS: an equivalent-entry search for the rotate-complement sequence. The author then rewrites all draft text in their own words.

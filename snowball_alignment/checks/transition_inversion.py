@@ -202,6 +202,44 @@ ck("TI8_decimal_10_is_minus_4_mod_7", (10 + 4) % 7 == 0)
 ck("TI8_hex_fixed_nibbles_are_thirds", ti8[4]["fixed_words"] == [5, 10] and (0x5, 0xA) == (15 // 3, 2 * 15 // 3),
    "hex 1/3=0.555..., 2/3=0.AAA...; decimal thirds give the wall digits 3,6,9")
 
+# TI9: the decimal C6 phase cannot live in the 168-element group.  GL(3,2) element
+# orders are {1,2,3,4,7}; the 142857 phase (order 6) needs the affine translation,
+# i.e. the eighth coordinate (AGL(3,2), order 1344).  Corroborates CLOSURE_WEB L241-245.
+from itertools import product as _prod
+from collections import Counter
+def _mul(a, b): return tuple(tuple(sum(a[i][k] * b[k][j] for k in range(3)) % 2 for j in range(3)) for i in range(3))
+_I = ((1, 0, 0), (0, 1, 0), (0, 0, 1))
+def _det(m): return (m[0][0]*(m[1][1]*m[2][2]-m[1][2]*m[2][1]) - m[0][1]*(m[1][0]*m[2][2]-m[1][2]*m[2][0]) + m[0][2]*(m[1][0]*m[2][1]-m[1][1]*m[2][0])) % 2
+_GL = [m for m in (tuple(tuple(v[3*i:3*i+3]) for i in range(3)) for v in _prod([0, 1], repeat=9)) if _det(m)]
+def _ord(m):
+    k, x = 1, m
+    while x != _I: x = _mul(x, m); k += 1
+    return k
+_orders = Counter(_ord(m) for m in _GL)
+ck("TI9_GL32_has_no_order_6", len(_GL) == 168 and 6 not in _orders, sorted(_orders.items()))
+ck("TI9_atlas_phase_is_affine_not_linear", fpos[0] != 0, "the phase moves the origin: translation part nonzero")
+
+# TI10: independent characterizations of r = 3 (radix-free), each checked on r = 2..12.
+tau = lambda n: sum(1 for d in range(1, n + 1) if n % d == 0)
+chars = {
+    "D(C)=C_perp (TI4)": [r for r in range(2, 13) if (1 << r) - 1 - r - 1 == r],   # dim D(C) = k-1 equals dual dim r
+    "2(r+1)=2^r": [r for r in range(2, 13) if 2 * (r + 1) == 2 ** r],
+    "tau(2^r-2)=2^r-1-r": [r for r in range(2, 13) if tau(2 ** r - 2) == 2 ** r - 1 - r],
+    "z^2+1 single non-wall cycle (TI5)": [r for r in range(2, 13) if r % 2 and (2 ** r - 2) // (2 * r) == 1],
+}
+ck("TI10_characterizations_of_r3", all(v == [3] for v in chars.values()), chars)
+# Honest dependency record: TI4 (dim D(C) = 2^r-r-2 = r), the single-cycle condition
+# ((2^r-2)/(2r) = 1) and 2(r+1) = 2^r are ONE equation read three ways.  Only the
+# divisor-count condition tau(2^r-2) = 2^r-1-r is an independent route.
+ck("TI10_three_readings_are_one_equation",
+   all(((2**r - r - 2 == r) == (2*(r+1) == 2**r) == ((2**r - 2) == 2*r)) for r in range(2, 64)))
+
+# TI11: the Cosmic Pattern's radii (13,3) are one squeeze parameter tanh s = r/R = 3/13:
+# cosh^2 = 1/(1-a^2) = 169/160, sinh^2 = a^2/(1-a^2) = 9/160 (RR-RELATIVE-DISK calibrated radius a).
+from fractions import Fraction as _F
+_a = _F(3, 13)
+ck("TI11_cosmic_radii_are_one_disk_parameter", (1 / (1 - _a * _a), _a * _a / (1 - _a * _a)) == (_F(169, 160), _F(9, 160)))
+
 if __name__ == "__main__":
     json.dump({"failures": FAIL, "results": OUT}, sys.stdout, indent=1, default=str)
     print()

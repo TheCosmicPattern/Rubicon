@@ -36,11 +36,21 @@ The snowball proposes the **signed translation-carry array** P(m,i,h) = ⌊(σ(i
 2. **Triviality risk.** An array whose definition is ⌊(u+h)/m⌋ over a flattened three-index family is at high risk of being judged a simple flattening (keywords "less"/"dumb", or rejection). Its value lies in the reconstruction theorems, and those are classical (Hermite; Euclidean division). **Recommendation:** do not lead with it. Keep it as the snowball's internal realization, or submit it only after an editor-facing search establishes that the serialization is wanted.
 3. **The GM table** (first-hit prime/base) is a narrower, more arbitrary selector: the least base primitive at p and at no smaller odd prime. Its reconstruction identities hold for every multiplier (RR-GM-DEFINITION says so), so the selector carries the definition's arbitrariness. Keep it as a cofile or example, not a primary entry.
 4. **Prefix novelty.** The live search finds no entry for either candidate. The 12-term prefix `0,1,0,0,-1,0,1,0,0,0,2,-1` coincides with A085857 (a digit count). That is the finite-prefix aliasing the snowball's CR2 warns about: cite the definition, not the prefix.
-5. **Author field / attribution.** `%A AXXXXXX -~~~~` and "J. Probasco" in %H must be the registered OEIS author's name and signature.
+5. **Identify the live quartet.** The live submission is ENTRY + a-file + b-file + program for P(m,i,h). Its current bytes are not in the package, so every correction here must be compared against them first (RELATION_HANDOFF L7–10; REGISTRY L5852–5858).
+6. **Strip before resubmission:**
+   - AI-drafted %C text and "immune to pushback" wording (SRC-ATT-TRANSLATION);
+   - the Fan–Pollack statement without its "nonsquare g, g ≠ −1" hypotheses;
+   - the broken `continuous_jump` routine (RR-PRESENTATION-CHECK);
+   - the notation collision Φ_m (translation carry) vs Φ_n (cyclotomic): rename one;
+   - bundling of unrelated blocks (the JP000016 pattern).
+7. **Carry the attributions** the sources name: Geller–Kra–Popescu–Simanca; Radicic (Filomat 2017).
+8. **Author field / attribution.** `%A AXXXXXX -~~~~` and "J. Probasco" in %H must be the registered OEIS author's name and signature.
 
 ---
 
-## 2. Recommended primary entry: the transition-phase cycle count (new)
+## 2. The transition-phase cycle count: a companion face by default, a separate entry only by the author's decision
+
+**Revision.** The snowball's own publication discipline allows one centre with companions. It lists "a new public sequence created from a companion face" as a rejection condition (PFG L2291–2332; see `SOURCE_CORROBORATION.md` §8). The default placement for this result is therefore **inside the central entry's cofiles**: a %F line and an a-file section generalizing the 1/7 phase. Submit it separately only if the author judges it independent. The case for doing so: it interleaves two classical necklace counts (A000013 odd n, A000031 even n) whether or not any digit table exists. The draft below serves either placement.
 
 **Definition.** a(n) = number of cycles of x ↦ (2ⁿ−1) − rot(x) on n-bit words: rotate one place, then complement. Draft: `oeis_packet/ENTRY_rotate_complement_DRAFT.txt`. Program and b-file (n ≤ 1000): `oeis_packet/rotcomp.py`, `oeis_packet/b_rotcomp.txt`.
 
@@ -116,7 +126,7 @@ Hosted here and linked from the new entry by a single %H line, so it does not be
 | A publication object whose definition is canonical rather than selected | §2 (rotate-complement), with explicit Hamming/hex/byte apertures |
 | The classical name of its core identity | Hermite's identity (§1.1) |
 | An explicit identity for its LM-ATLAS phase | z ↦ z²+1 in a normal basis; complement = n-th power; radices −2ʲ |
-| A worked calibrated instance of RR-JOINT-CALIBRATION with real data | α (Cs vs Rb), H₀, CODATA editions: `constants_as_bounds.py` |
+| Worked calibrated instances beyond its own 1σ α continued fraction (SRC-06 L4318–4353 already certifies that) | several editions and measurements, joint-relation certificates (Cs vs Rb α, H₀), critical coverages: `constants_as_bounds.py` |
 
 | The drafts lacked | Supplied here |
 |---|---|
