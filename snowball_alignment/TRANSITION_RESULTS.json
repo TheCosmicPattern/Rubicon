@@ -1,0 +1,515 @@
+{
+ "failures": [],
+ "results": {
+  "r3_basis_in_code": {
+   "pass": true,
+   "detail": null
+  },
+  "r3_TI1_image_dim_k-1_all_even": {
+   "pass": true,
+   "detail": [
+    3,
+    4
+   ]
+  },
+  "r3_TI1_all_ones_in_code_and_killed": {
+   "pass": true,
+   "detail": null
+  },
+  "r3_TI2_syndrome_rotation_step_Z1": {
+   "pass": true,
+   "detail": 3
+  },
+  "r3_TI3_parity_names_kernel_class": {
+   "pass": true,
+   "detail": null
+  },
+  "r3_TI4_D(C)==dual": {
+   "pass": true,
+   "detail": {
+    "D(C)=C_perp": true,
+    "dimD": 3,
+    "dim_dual": 3
+   }
+  },
+  "r3_TI5_f2_is_z4": {
+   "pass": true,
+   "detail": null
+  },
+  "r3_TI5_odd_fr_is_z+1": {
+   "pass": true,
+   "detail": null
+  },
+  "r3_TI5_odd_cycles": {
+   "pass": true,
+   "detail": [
+    2,
+    6
+   ]
+  },
+  "r3_TI5_single_nonwall_cycle_iff_r3": {
+   "pass": true,
+   "detail": null
+  },
+  "r4_basis_in_code": {
+   "pass": true,
+   "detail": null
+  },
+  "r4_TI1_image_dim_k-1_all_even": {
+   "pass": true,
+   "detail": [
+    10,
+    11
+   ]
+  },
+  "r4_TI1_all_ones_in_code_and_killed": {
+   "pass": true,
+   "detail": null
+  },
+  "r4_TI2_syndrome_rotation_step_Z1": {
+   "pass": true,
+   "detail": 4
+  },
+  "r4_TI3_parity_names_kernel_class": {
+   "pass": true,
+   "detail": null
+  },
+  "r4_TI4_D(C)==dual": {
+   "pass": true,
+   "detail": {
+    "D(C)=C_perp": false,
+    "dimD": 10,
+    "dim_dual": 4
+   }
+  },
+  "r4_TI5_f2_is_z4": {
+   "pass": true,
+   "detail": null
+  },
+  "r4_TI5_even_order_r_fixed_cube_roots": {
+   "pass": true,
+   "detail": {
+    "fixed": [
+     6,
+     7
+    ],
+    "cycles": [
+     1,
+     1,
+     2,
+     4,
+     4,
+     4
+    ]
+   }
+  },
+  "r4_TI5_single_nonwall_cycle_iff_r3": {
+   "pass": true,
+   "detail": null
+  },
+  "r5_basis_in_code": {
+   "pass": true,
+   "detail": null
+  },
+  "r5_TI1_image_dim_k-1_all_even": {
+   "pass": true,
+   "detail": [
+    25,
+    26
+   ]
+  },
+  "r5_TI1_all_ones_in_code_and_killed": {
+   "pass": true,
+   "detail": null
+  },
+  "r5_TI2_syndrome_rotation_step_Z1": {
+   "pass": true,
+   "detail": 18
+  },
+  "r5_TI3_parity_names_kernel_class": {
+   "pass": true,
+   "detail": null
+  },
+  "r5_TI4_D(C)==dual": {
+   "pass": true,
+   "detail": {
+    "D(C)=C_perp": false,
+    "dimD": 25,
+    "dim_dual": 5
+   }
+  },
+  "r5_TI5_f2_is_z4": {
+   "pass": true,
+   "detail": null
+  },
+  "r5_TI5_odd_fr_is_z+1": {
+   "pass": true,
+   "detail": null
+  },
+  "r5_TI5_odd_cycles": {
+   "pass": true,
+   "detail": [
+    2,
+    10,
+    10,
+    10
+   ]
+  },
+  "r5_TI5_single_nonwall_cycle_iff_r3": {
+   "pass": true,
+   "detail": null
+  },
+  "r6_basis_in_code": {
+   "pass": true,
+   "detail": null
+  },
+  "r6_TI1_image_dim_k-1_all_even": {
+   "pass": true,
+   "detail": [
+    56,
+    57
+   ]
+  },
+  "r6_TI1_all_ones_in_code_and_killed": {
+   "pass": true,
+   "detail": null
+  },
+  "r6_TI2_syndrome_rotation_step_Z1": {
+   "pass": true,
+   "detail": 6
+  },
+  "r6_TI3_parity_names_kernel_class": {
+   "pass": true,
+   "detail": null
+  },
+  "r6_TI4_D(C)==dual": {
+   "pass": true,
+   "detail": {
+    "D(C)=C_perp": false,
+    "dimD": 56,
+    "dim_dual": 6
+   }
+  },
+  "r6_TI5_f2_is_z4": {
+   "pass": true,
+   "detail": null
+  },
+  "r6_TI5_even_order_r_fixed_cube_roots": {
+   "pass": true,
+   "detail": {
+    "fixed": [
+     58,
+     59
+    ],
+    "cycles": [
+     1,
+     1,
+     2,
+     3,
+     3,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ]
+   }
+  },
+  "r6_TI5_single_nonwall_cycle_iff_r3": {
+   "pass": true,
+   "detail": null
+  },
+  "r7_basis_in_code": {
+   "pass": true,
+   "detail": null
+  },
+  "r7_TI1_image_dim_k-1_all_even": {
+   "pass": true,
+   "detail": [
+    119,
+    120
+   ]
+  },
+  "r7_TI1_all_ones_in_code_and_killed": {
+   "pass": true,
+   "detail": null
+  },
+  "r7_TI2_syndrome_rotation_step_Z1": {
+   "pass": true,
+   "detail": 7
+  },
+  "r7_TI3_parity_names_kernel_class": {
+   "pass": true,
+   "detail": null
+  },
+  "r7_TI4_D(C)==dual": {
+   "pass": true,
+   "detail": {
+    "D(C)=C_perp": false,
+    "dimD": 119,
+    "dim_dual": 7
+   }
+  },
+  "r7_TI5_f2_is_z4": {
+   "pass": true,
+   "detail": null
+  },
+  "r7_TI5_odd_fr_is_z+1": {
+   "pass": true,
+   "detail": null
+  },
+  "r7_TI5_odd_cycles": {
+   "pass": true,
+   "detail": [
+    2,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14,
+    14
+   ]
+  },
+  "r7_TI5_single_nonwall_cycle_iff_r3": {
+   "pass": true,
+   "detail": null
+  },
+  "r3r_basis_in_code": {
+   "pass": true,
+   "detail": null
+  },
+  "r3r_TI1_image_dim_k-1_all_even": {
+   "pass": true,
+   "detail": [
+    3,
+    4
+   ]
+  },
+  "r3r_TI1_all_ones_in_code_and_killed": {
+   "pass": true,
+   "detail": null
+  },
+  "r3r_TI2_syndrome_rotation_step_Z1": {
+   "pass": true,
+   "detail": 5
+  },
+  "r3r_TI3_parity_names_kernel_class": {
+   "pass": true,
+   "detail": null
+  },
+  "r3r_TI4_D(C)==dual": {
+   "pass": true,
+   "detail": {
+    "D(C)=C_perp": true,
+    "dimD": 3,
+    "dim_dual": 3
+   }
+  },
+  "r3r_TI5_f2_is_z4": {
+   "pass": true,
+   "detail": null
+  },
+  "r3r_TI5_odd_fr_is_z+1": {
+   "pass": true,
+   "detail": null
+  },
+  "r3r_TI5_odd_cycles": {
+   "pass": true,
+   "detail": [
+    2,
+    6
+   ]
+  },
+  "r3r_TI5_single_nonwall_cycle_iff_r3": {
+   "pass": true,
+   "detail": null
+  },
+  "TI6_atlas_phase_is_z2+1": {
+   "pass": true,
+   "detail": {
+    "count": 6,
+    "first": [
+     {
+      "g": "0b1011",
+      "phi": [
+       0,
+       1,
+       3,
+       2,
+       4,
+       5,
+       7,
+       6
+      ]
+     },
+     {
+      "g": "0b1011",
+      "phi": [
+       0,
+       1,
+       5,
+       4,
+       6,
+       7,
+       3,
+       2
+      ]
+     }
+    ]
+   }
+  },
+  "TI6_complement_is_translation_by_1": {
+   "pass": true,
+   "detail": null
+  },
+  "TI6_J_is_linear_transvection": {
+   "pass": true,
+   "detail": [
+    0,
+    1,
+    2,
+    3,
+    7,
+    6,
+    5,
+    4
+   ]
+  },
+  "TI6_JCJ_is_C_inverse": {
+   "pass": true,
+   "detail": null
+  },
+  "TI7_r3_decimal_is_a_transliteration": {
+   "pass": true,
+   "detail": {
+    "2": {
+     "p": 3,
+     "radices_ord_2r": [],
+     "decimal_ord": 1
+    },
+    "3": {
+     "p": 7,
+     "radices_ord_2r": [
+      3,
+      5,
+      10,
+      12,
+      17,
+      19,
+      24,
+      26
+     ],
+     "decimal_ord": 6
+    },
+    "4": "p=15 composite: no radix readout matches (units 8 != 14)",
+    "5": {
+     "p": 31,
+     "radices_ord_2r": [
+      15,
+      23,
+      27,
+      29,
+      46,
+      54,
+      58,
+      60
+     ],
+     "decimal_ord": 15
+    },
+    "6": "p=63 composite: no radix readout matches (units 36 != 62)",
+    "7": {
+     "p": 127,
+     "radices_ord_2r": [
+      63,
+      95,
+      111,
+      119,
+      123,
+      125,
+      190
+     ],
+     "decimal_ord": 42
+    },
+    "8": "p=255 composite: no radix readout matches (units 128 != 254)"
+   }
+  },
+  "TI8_rotate_complement_is_times_minus_2j": {
+   "pass": true,
+   "detail": {
+    "3": {
+     "identity": true,
+     "normal_basis": {
+      "beta": 3,
+      "z^2+1_in_normal_basis": true
+     },
+     "fixed_words": []
+    },
+    "4": {
+     "identity": true,
+     "normal_basis": {
+      "beta": 8,
+      "z^2+1_in_normal_basis": true
+     },
+     "fixed_words": [
+      5,
+      10
+     ]
+    },
+    "5": {
+     "identity": true,
+     "normal_basis": {
+      "beta": 3,
+      "z^2+1_in_normal_basis": true
+     },
+     "fixed_words": []
+    },
+    "6": {
+     "identity": true,
+     "normal_basis": {
+      "beta": 32,
+      "z^2+1_in_normal_basis": true
+     },
+     "fixed_words": [
+      21,
+      42
+     ]
+    },
+    "7": {
+     "identity": true,
+     "normal_basis": {
+      "beta": 9,
+      "z^2+1_in_normal_basis": true
+     },
+     "fixed_words": []
+    },
+    "8": {
+     "identity": true,
+     "normal_basis": null,
+     "fixed_words": [
+      85,
+      170
+     ]
+    }
+   }
+  },
+  "TI8_normal_basis_realizes_z2+1": {
+   "pass": true,
+   "detail": null
+  },
+  "TI8_decimal_10_is_minus_4_mod_7": {
+   "pass": true,
+   "detail": null
+  },
+  "TI8_hex_fixed_nibbles_are_thirds": {
+   "pass": true,
+   "detail": "hex 1/3=0.555..., 2/3=0.AAA...; decimal thirds give the wall digits 3,6,9"
+  }
+ }
+}
