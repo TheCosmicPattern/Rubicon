@@ -6,6 +6,8 @@ This is working material for the author. OEIS does not accept AI-authored entrie
 
 ## 0. The governing idea, stated so a reviewer can check it
 
+> **Revised framing.** The constants are stones and the measurements are flows around them. See [`CONSTANTS_AS_STONES.md`](CONSTANTS_AS_STONES.md) for the C e M normalization, the e-fold riverbed and the traced buttress. The interval-reader framing below is kept as the per-stone view. The companion that an OEIS entry would link to (§4) should lead with the stones-and-flows document.
+
 **Constants first.** A physical constant does not reach us as a number. It reaches us as a published *bound*: a value v with standard uncertainty u. With a declared coverage k this gives the interval I_k = [v − ku, v + ku]. The bound is the source relation, in the snowball's own sense (IR1): the set of compatible reals.
 
 **The mathematics is the reader.** A continued fraction, radix-b digits, the simplest rational, a binary contact word: each is an observation with fibers. A term is *forced* by the constant exactly when it is constant on I_k (RR-FORCED-LAW). The first place where it is not forced is the **transition**, the "betwixt" position. There the complete set of compatible values must be kept (RR-JOINT-CALIBRATION: "keep every compatible output rather than expanding a rounded estimate into an allegedly exact infinite sequence").

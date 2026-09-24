@@ -564,6 +564,57 @@
   "TI11_cosmic_radii_are_one_disk_parameter": {
    "pass": true,
    "detail": null
+  },
+  "TI12_constants_are_frobenius_fixed_and_phase_flows_around_them": {
+   "pass": true,
+   "detail": {
+    "3": {
+     "frobenius_fixed": [
+      0,
+      1
+     ],
+     "phase_swaps_0_1": true,
+     "extra_stones": []
+    },
+    "4": {
+     "frobenius_fixed": [
+      0,
+      1
+     ],
+     "phase_swaps_0_1": true,
+     "extra_stones": [
+      6,
+      7
+     ]
+    },
+    "5": {
+     "frobenius_fixed": [
+      0,
+      1
+     ],
+     "phase_swaps_0_1": true,
+     "extra_stones": []
+    },
+    "6": {
+     "frobenius_fixed": [
+      0,
+      1
+     ],
+     "phase_swaps_0_1": true,
+     "extra_stones": [
+      58,
+      59
+     ]
+    },
+    "7": {
+     "frobenius_fixed": [
+      0,
+      1
+     ],
+     "phase_swaps_0_1": true,
+     "extra_stones": []
+    }
+   }
   }
  }
 }

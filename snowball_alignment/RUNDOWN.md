@@ -120,7 +120,16 @@ All of the following are machine-checked in `checks/transition_inversion.py`, fo
 - Its most transferable idea is the *non-simultaneous comparison of H₀ through two lenses*. That is exactly RR-CONSTITUTION-RETURN's distinct endpoint lenses.
 - Its Z₃ / "θ̄ = 0 + 2π/3 + 4π/3" has an exact home: the GF(4) cube roots of unity, which first appear in the phase at the hex aperture.
 
-## 6. Constants first: the bounds as the opposing object
+## 6. Constants as stones, measurements as flows
+
+**This section is superseded by [`CONSTANTS_AS_STONES.md`](CONSTANTS_AS_STONES.md).** That document normalizes through C e M: c as mass↔energy, Euler's e as the natural-log metric, and mc² as the anchor. It places 17 stones on one e-fold riverbed and traces the buttress through the loop holonomies of independent measurement flows:
+- α: Rb↔Cs at 5.5σ, located on the atom-specific legs after R∞ and m_e cancel;
+- H₀: CMB↔ladder at 5.0σ, at the model/ladder fork;
+- G: Birge ratio 4.45, located on the individual apparatus.
+
+The material below reads a single stone's bounds one reader at a time. It remains valid, but it is the narrower view.
+
+### 6a. Reading one stone's bounds
 
 Computed exactly in `checks/constants_as_bounds.py`. Values tagged [recall] must be confirmed at the source.
 

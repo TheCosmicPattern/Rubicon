@@ -202,9 +202,11 @@ ck("TI8_decimal_10_is_minus_4_mod_7", (10 + 4) % 7 == 0)
 ck("TI8_hex_fixed_nibbles_are_thirds", ti8[4]["fixed_words"] == [5, 10] and (0x5, 0xA) == (15 // 3, 2 * 15 // 3),
    "hex 1/3=0.555..., 2/3=0.AAA...; decimal thirds give the wall digits 3,6,9")
 
-# TI9: the decimal C6 phase cannot live in the 168-element group.  GL(3,2) element
-# orders are {1,2,3,4,7}; the 142857 phase (order 6) needs the affine translation,
-# i.e. the eighth coordinate (AGL(3,2), order 1344).  Corroborates CLOSURE_WEB L241-245.
+# TI9: stones and flow.  The 168 linear symmetries GL(3,2) all fix the origin stone;
+# their element orders are {1,2,3,4,7}.  The decimal 142857 phase is a FLOW of order 6
+# that moves through the stones: it needs the translation (the eighth coordinate,
+# AGL(3,2), order 1344).  The linear symmetries are the riverbed the flow passes
+# around; they do not have to contain it.  Corroborates CLOSURE_WEB L241-245.
 from itertools import product as _prod
 from collections import Counter
 def _mul(a, b): return tuple(tuple(sum(a[i][k] * b[k][j] for k in range(3)) % 2 for j in range(3)) for i in range(3))
@@ -239,6 +241,23 @@ ck("TI10_three_readings_are_one_equation",
 from fractions import Fraction as _F
 _a = _F(3, 13)
 ck("TI11_cosmic_radii_are_one_disk_parameter", (1 / (1 - _a * _a), _a * _a / (1 - _a * _a)) == (_F(169, 160), _F(9, 160)))
+
+# TI12: the constants of the field are the stones.  In GF(2^r) the elements fixed by
+# Frobenius z -> z^2 are exactly the prime field {0,1} (the "field of constants").
+# The transition phase z -> z^2 + 1 is Frobenius followed by translation by the
+# constant 1: it leaves the stone set {0,1} in place as a set and exchanges its two
+# members (the 0 <-> 9 wall), while every other state flows around them.  At even r
+# the flow acquires two further fixed stones, the roots of z^2+z+1 (GF(4), the thirds).
+ti12 = {}
+for r, g in PRIM.items():
+    N = 1 << r
+    frob_fixed = [z for z in range(N) if gmul(z, z, g, r) == z]
+    f = [gmul(z, z, g, r) ^ 1 for z in range(N)]
+    stones = [z for z in range(N) if f[z] == z]
+    ti12[r] = {"frobenius_fixed": frob_fixed, "phase_swaps_0_1": f[0] == 1 and f[1] == 0, "extra_stones": stones}
+ck("TI12_constants_are_frobenius_fixed_and_phase_flows_around_them",
+   all(v["frobenius_fixed"] == [0, 1] and v["phase_swaps_0_1"] and (len(v["extra_stones"]) == (2 if r % 2 == 0 else 0))
+       for r, v in ti12.items()), ti12)
 
 if __name__ == "__main__":
     json.dump({"failures": FAIL, "results": OUT}, sys.stdout, indent=1, default=str)
